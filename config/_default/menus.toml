@@ -1,0 +1,11 @@
+[[main]]
+    name = 'Home'
+    url = '/home'
+    weight = '1'
+
+[[social]]
+    name = 'Twitter'
+    url = 'https://twitter.com'
+    weight = '1'
+    [social.params]
+        icon = ''

@@ -1,0 +1,4 @@
+title = 'My Site'
+description = 'lorem ipsum'
+titleSeparator = '|'
+thumbnail = 'images/logo.jpg'

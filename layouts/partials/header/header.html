@@ -1,0 +1,18 @@
+<header >
+    <div>
+      <ul>
+        {{ range .Site.Menus.main -}}
+          <li>
+            <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+          </li>
+        {{ end -}}
+      </ul>
+      <ul>
+        {{ range .Site.Menus.social -}}
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}"><img src="{{ .Params.icon | absURL }}" width="32" height="22" alt="{{ .Name }}"><span class="sr-only">{{ .Name | safeHTML }}</span></a>
+          </li>
+        {{ end -}}
+      </ul>
+    </div>
+  </header>
