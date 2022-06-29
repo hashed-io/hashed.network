@@ -1,14 +1,19 @@
 <header>
   <nav>
-    <a href="#">
-      Logo
+    <a href="{{ .Site.BaseURL }}">
+      <img src="images/logo.svg" alt="Logo">
     </a>
-    <ul>
-      {{ range .Site.Menus.main -}}
-        <li>
-          <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
-        </li>
-      {{ end -}}
-    </ul>
+    <div>
+      <ul>
+        {{ range .Site.Menus.main -}}
+          <li>
+            <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+          </li>
+        {{ end -}}
+      </ul>
+      <a href="#" class="btn-header">
+        Get in touch
+      </a>
+    </div>
   </nav>
 </header>
