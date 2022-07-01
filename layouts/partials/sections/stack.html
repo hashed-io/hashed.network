@@ -49,14 +49,14 @@
             </div>
             <div class="tabs">
                 <ul>
-                    <li class="active">
-                        <a href="#">FEATURES</a>
+                    <li class="active" onclick="showTab(this)" data-tab="features">
+                        <a type="button">FEATURES</a>
                     </li>
-                    <li>
-                        <a href="#">PROJECTS</a>
+                    <li onclick="showTab(this)" data-tab="projects">
+                        <a type="button">PROJECTS</a>
                     </li>
                 </ul>
-                <div class="tab features">
+                <div class="tab show" data-tab="features">
                     <div class="item">
                         <div class="icon">
                             <img src="icons/balance.svg" alt="">
@@ -92,11 +92,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab projects">
+                <div class="tab" data-tab="projects">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="icons/balance.svg" alt="">
+                        </div>
+                        <div class="body">
+                            <p>
+                                <strong>Create and manage the equity</strong> and operation agreement of <br> 
+                                Digitally-native organizations
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <nav>
-                    <span class="active"></span>
-                    <span></span>
+                    <span class="dot active" onclick="showTab(this)" data-tab="features"></span>
+                    <span class="dot" onclick="showTab(this)" data-tab="projects"></span>
                 </nav>
             </div>
         </div>

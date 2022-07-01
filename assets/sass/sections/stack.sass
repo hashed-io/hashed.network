@@ -36,7 +36,6 @@
 .stack .container .row .cards .item
     border: 1px solid #C1C1C1
     border-radius: 15px
-    opacity: 0.6
     margin-bottom: 20px
     padding: 20px
     display: flex
@@ -68,7 +67,6 @@
     display: flex
     list-style: none
     margin: auto
-    opacity: 0.6
     width: 200px
     text-align: center
 
@@ -98,8 +96,13 @@
     text-align: center
     text-transform: uppercase
 
-.stack .container .row .tabs .tab
-    display: block
+.stack .container .row .tabs 
+    
+    .tab
+        display: none
+
+        &.show
+            display: block !important
 
 .stack .container .row .tabs .tab .item
     display: flex
