@@ -1,4 +1,7 @@
 {{ block "scripts" . }}
     {{ $tabs := resources.Get "js/tabs.js" | minify -}}
     <script src="{{ $tabs.Permalink }}" defer></script>
+    <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
+    {{ $slider := resources.Get "js/slider.js" | minify -}}
+    <script src="{{ $slider.Permalink }}" defer></script>
 {{ end }}
