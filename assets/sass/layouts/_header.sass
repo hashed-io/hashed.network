@@ -40,3 +40,20 @@ header nav div ul li a
     padding: 10px 30px
     text-transform: uppercase
     letter-spacing: 1px
+
+.menu
+    display: none
+
+    img
+        width: 30px
+
+@media (min-width: $layout-breakpoint-tablet)
+
+    header nav div
+        display: none
+
+    header nav div ul
+        flex-direction: column
+
+    .menu
+        display: block
