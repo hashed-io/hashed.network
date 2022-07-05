@@ -34,6 +34,7 @@
 // Cards
 .stack .container .row .cards
     display: block
+    width: 50%
 
 .stack .container .row .cards .item
     border: 1px solid #C1C1C1
@@ -48,7 +49,7 @@
         border: none
 
 .stack .container .row .cards .item .icon
-    padding: 20px
+    padding: 15px
 
 .stack .container .row .cards .item .icon img
     width: 25px
@@ -68,17 +69,20 @@
     line-height: $base-line-height
 
 // features and projects
+.stack .container .row .tabs
+    width: 50%
+
 .stack .container .row .tabs ul
     border: 1px solid #C1C1C1
-    border-radius: 15px
+    border-radius: 10px
     display: flex
     list-style: none
     margin: auto
-    width: 200px
+    width: 260px
     text-align: center
 
 .stack .container .row .tabs ul li
-    padding: 5px 20px
+    padding: 5px 35px
 
     &:first-child
         border-right: 1px solid $white
@@ -87,12 +91,12 @@
         background-color: #fff
         
         &:first-child
-            border-top-left-radius: 15px
-            border-bottom-left-radius: 15px
+            border-top-left-radius: 10px
+            border-bottom-left-radius: 10px
         
         &:nth-child(2)
-            border-top-right-radius: 15px
-            border-bottom-right-radius: 15px
+            border-top-right-radius: 10px
+            border-bottom-right-radius: 10px
         
         a
             color: #150133
