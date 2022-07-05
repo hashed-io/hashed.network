@@ -1,0 +1,103 @@
+.team
+    background: transparent linear-gradient(171deg, #30E6FC 0%, #290266 100%) 0% 0% no-repeat padding-box
+    padding: 90px 0
+    width: 100%
+    overflow: hidden
+
+.team .header
+    width: 85%
+    margin: auto
+    color: $white
+    display: flex
+    margin-bottom: 50px
+    
+.team .header .titles
+    width: 70%
+
+    h1
+        font-size: 60px
+        font-weight: 200
+
+    p
+        font-size: 16px
+        font-weight: 100
+        line-height: $base-line-height
+
+.team .header .arrows
+    overflow: hidden
+    display: flex
+    justify-content: end
+    align-items: flex-end
+    list-style: none
+    width: 30%
+
+    li
+        border-radius: 10px
+        background: #1E282B 0% 0% no-repeat padding-box
+        padding: 5px 10px
+        text-align: center
+    
+        img
+            width: 5px
+
+    
+    & li:first-child
+        margin-right: 15px
+
+    & .active
+        background: #12002C 0% 0% no-repeat padding-box
+
+.members
+    display: -webkit-box
+    // margin-left: 100px
+    width: 85%
+    margin: auto
+    scrollbar-width: none
+
+    .item
+        background: rgba(14, 1, 33, 0.7) no-repeat padding-box
+        color: $white
+        border-radius: 15px
+        padding: 30px 40px
+        margin-right: 25px
+        width: 170px
+
+        .cover 
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 10px
+
+            img
+                border-radius: 50%
+                height: 120px
+                width: 120px
+                max-width: 100%
+                margin: auto
+        
+        .personal-info
+            margin-bottom: 20px
+            text-align: center
+
+            h6
+                font-size: 25px
+                font-weight: 200
+
+            p
+                margin-top: 8px
+                font-size: 12px
+                font-weight: 100
+                font-style: italic
+
+        .social-networks
+            display: flex
+            justify-content: center
+            list-style: none
+
+            li 
+                padding: 0 10px
+
+                a 
+                    img
+                        width: 15px
+       

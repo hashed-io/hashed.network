@@ -1,7 +1,7 @@
 .stack
     background: transparent linear-gradient(43deg, #290266 0%, #150133 100%) 0% 0% no-repeat padding-box
     width: 100%
-    padding-top: 100px
+    padding: 100px 0
 
 .stack .container
     width: 85%
@@ -14,9 +14,11 @@
 
 .stack .container .titles h1
     font-size: 50px
+    font-weight: 200
 
 .stack .container .titles p
     font-size: 16px
+    font-weight: 100
     line-height: $base-line-height
     margin: 25px 0
 
@@ -26,7 +28,8 @@
 .stack .container .row
     display: flex
     justify-content: center
-    margin-top: 80px 
+    margin-top: 80px
+    position: relative
 
 // Cards
 .stack .container .row .cards
@@ -35,7 +38,6 @@
 .stack .container .row .cards .item
     border: 1px solid #C1C1C1
     border-radius: 15px
-    opacity: 0.6
     margin-bottom: 20px
     padding: 20px
     display: flex
@@ -43,6 +45,7 @@
 
     &.active
         background-color: #0E0121
+        border: none
 
 .stack .container .row .cards .item .icon
     padding: 20px
@@ -54,10 +57,14 @@
     color: $white
 
 .stack .container .row .cards .item .body h4
+    font-size: 20px
+    font-weight: 200
     padding-bottom: 10px 
     text-transform: uppercase
 
 .stack .container .row .cards .item .body p
+    font-size: 15px
+    font-weight: 100
     line-height: $base-line-height
 
 // features and projects
@@ -66,17 +73,84 @@
     border-radius: 15px
     display: flex
     list-style: none
-    opacity: 0.6
-    width: 100px
+    margin: auto
+    width: 200px
     text-align: center
 
 .stack .container .row .tabs ul li
     padding: 5px 20px
 
+    &:first-child
+        border-right: 1px solid $white
+
     &.active
-        background-color: $white
-        color: #150133
+        background-color: #fff
+        
+        &:first-child
+            border-top-left-radius: 15px
+            border-bottom-left-radius: 15px
+        
+        &:nth-child(2)
+            border-top-right-radius: 15px
+            border-bottom-right-radius: 15px
+        
+        a
+            color: #150133
+            font-weight: 200
 
 .stack .container .row .tabs ul li a
     color: $white
+    font-size: 12px
+    text-align: center
     text-transform: uppercase
+
+.stack .container .row .tabs 
+    
+    .tab
+        display: none
+
+        &.show
+            display: block !important
+
+.stack .container .row .tabs .tab .item
+    display: flex
+    padding: 20px
+
+.stack .container .row .tabs .tab .item .icon
+    padding: 0 20px
+
+.stack .container .row .tabs .tab .item .icon img
+    width: 30px
+
+.stack .container .row .tabs .tab .item .body
+    color: $white
+    font-size: 15px
+    font-weight: 100
+    line-height: $base-line-height
+    text-align: left
+
+.stack .container .row .tabs nav 
+    width: 100%
+    display: flex
+    justify-content: center
+    position: relative
+    bottom: -15%
+
+.stack .container .row .tabs nav span
+    background-color: transparent
+    border: 1px solid $white
+    border-radius: 10px
+    padding: 5px
+
+    &:first-child
+        margin-right: 5px
+
+    &.active
+        background-color: $white
+        border-radius: 10px
+        padding: 5px
+        
+
+
+
+    
