@@ -8,6 +8,12 @@ const sb = new ScrollBooster({
 
 const arrows = document.querySelectorAll('.arrows li')
 
+const team = document.querySelectorAll('.members .item')
+var widthTeamContainer = 0
+team.forEach(item => {
+    widthTeamContainer += (item.offsetWidth - 150)
+})
+
 const moveToLeft = (ctx) => {
     const label = ctx.getAttribute('data-label')
 
@@ -25,7 +31,12 @@ const moveToRight = (ctx) => {
 
     const curr = Math.abs(sb.targetPosition.x) + 200
 
-    sb.scrollTo({ x: curr, y: 0 })
+    if (curr < widthTeamContainer) {
+        sb.scrollTo({ x: curr, y: 0 })
+    }
+
+    console.log(sb)
+
 }
 
 const onClick = (label) => {
