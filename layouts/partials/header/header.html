@@ -15,5 +15,26 @@
         Get in touch
       </a>
     </div>
+    <a class="menu" onclick="showSidebar()">
+      <img src="icons/menu.svg" alt="Menu icon">
+    </a>
   </nav>
 </header>
+
+<aside>
+  <a class="close" onclick="hideSidebar()">
+    <img src="icons/close.svg" alt="Close icon">
+  </a>
+  <div>
+    <ul>
+      {{ range .Site.Menus.main -}}
+        <li>
+          <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+        </li>
+      {{ end -}}
+    </ul>
+    <a href="#" class="btn-header">
+      Get in touch
+    </a>
+  </div>
+</aside>
