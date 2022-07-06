@@ -88,3 +88,25 @@
     font-weight: 100
     line-height: 30px
     text-align: left
+
+// responsive
+@media (max-width: $layout-breakpoint-tablet)
+
+    .banner .container div h1
+        font-size: 45px
+
+    .banner .container
+        margin-bottom: 0
+
+    .banner .features .row
+        justify-content: center
+        flex-direction: column
+
+    .banner .features .row 
+        
+        .card-feature
+            margin-top: 50px
+            width: 100%
+        
+            &:first-child
+                margin-top: 0
