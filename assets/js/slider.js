@@ -11,8 +11,21 @@ const arrows = document.querySelectorAll('.arrows li')
 const team = document.querySelectorAll('.members .item')
 var widthTeamContainer = 0
 team.forEach(item => {
-    widthTeamContainer += (item.offsetWidth - 150)
+    widthTeamContainer += item.offsetWidth
 })
+
+const desktop = window.matchMedia('(max-width: 1500px)')
+const phone = window.matchMedia('(max-width: 500px)')
+
+if (desktop.matches) {
+    widthTeamContainer -= 800
+}
+
+if (phone.matches) {
+    widthTeamContainer += 800
+}
+
+console.log(widthTeamContainer)
 
 const moveToLeft = (ctx) => {
     const label = ctx.getAttribute('data-label')
