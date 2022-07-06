@@ -35,8 +35,6 @@ const moveToRight = (ctx) => {
         sb.scrollTo({ x: curr, y: 0 })
     }
 
-    console.log(sb)
-
 }
 
 const onClick = (label) => {
