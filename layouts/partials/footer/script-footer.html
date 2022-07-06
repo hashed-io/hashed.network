@@ -3,6 +3,7 @@
     <script src="{{ $tabs.Permalink }}" defer></script>
     <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
     {{ $slider := resources.Get "js/slider.js" | minify -}}
-    {{ $slider := resources.Get "js/sidebar.js" | minify -}}
     <script src="{{ $slider.Permalink }}" defer></script>
+    {{ $sidebar := resources.Get "js/sidebar.js" | minify -}}
+    <script src="{{ $sidebar.Permalink }}" defer></script>
 {{ end }}
