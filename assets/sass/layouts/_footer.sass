@@ -42,3 +42,26 @@ footer
                 a
                     img
                         width: 20px
+
+// responsive
+@media (max-width: 900px)
+
+    footer div .links
+        width: 70%
+
+@media (max-width: 700px)
+
+    footer div .links
+        width: 80%
+
+@media (max-width: 550px)
+
+    footer div .links
+        grid-template-columns: repeat(1, 1fr)
+        
+        li
+            margin-bottom: 12px
+
+            &:last-child
+                margin-bottom: 0
+                
