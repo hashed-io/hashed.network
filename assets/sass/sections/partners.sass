@@ -19,7 +19,7 @@
     overflow: hidden
 
 .partners .logos img
-    width: 180px
+    width: 150px
     padding: 0 25px
 
 .partners a
@@ -31,4 +31,25 @@
     padding: 10px 15px
     text-align: center
     text-transform: uppercase
-    
+
+// responsive
+@media (max-width: 1000px)
+
+    .partners .logos img
+        width: 100px
+
+@media (max-width: $layout-breakpoint-tablet)
+
+    .partners
+        height: auto
+        padding: 50px 0
+
+    .partners h1
+        padding-top: 0
+
+    .partners .logos
+        flex-direction: column
+
+    .partners .logos img
+        padding: 25px
+        width: 180px
