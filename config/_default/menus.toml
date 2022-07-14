@@ -58,8 +58,8 @@
     weight = 3
 
 [[footer]]
-    name = "Views"
-    url = "/views"
+    name = "News"
+    url = "/news"
     weight = 4
 
 [[footer]]
