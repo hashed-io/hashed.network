@@ -1,55 +1,38 @@
 .partners
-    background: #12002C 0% 0% no-repeat padding-box
-    height: 330px
-    width: 100%
-    opacity: 1
-    text-align: center
+	background: $dark $gradient-partners 0% 0% no-repeat
 
-.partners h1
-    color: $white
-    font-size: 30px
-    font-weight: 200
-    padding-top: 50px
+	&-grid
+		padding: 100px 0
+		display: grid
+		grid-template-columns:  auto
+		gap: 23px
+		@media screen and (min-width: $breakpoint-xxl)
+			grid-template-columns: repeat(2, auto)
 
-.partners .logos
-    display: flex
-    align-items: center
-    justify-content: center
-    margin: 50px 10px
-    overflow: hidden
+	&-title
+		margin-top: 167px
 
-.partners .logos img
-    width: 150px
-    padding: 0 25px
+.partner
+	padding: 63px
+	background: $dark $gradient-card 0% 0% no-repeat
 
-.partners a
-    color: $white
-    border: 2px solid #30E6FC
-    border-radius: 5px
-    font-size: 12px
-    margin-top: 60px
-    padding: 10px 15px
-    text-align: center
-    text-transform: uppercase
+	&-description
+		margin-top: 55px
+		margin-bottom: 70px
+		line-height: 42px
+		letter-spacing: 0.19px
+		color: $grey
 
-// responsive
-@media (max-width: 1000px)
-
-    .partners .logos img
-        width: 100px
-
-@media (max-width: $layout-breakpoint-tablet)
-
-    .partners
-        height: auto
-        padding: 50px 0
-
-    .partners h1
-        padding-top: 0
-
-    .partners .logos
-        flex-direction: column
-
-    .partners .logos img
-        padding: 25px
-        width: 180px
+	&-links
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		gap: 40px
+		justify-content: center
+		@media screen and (min-width: $breakpoint-md)
+			flex-wrap: nowrap
+			justify-content: start
+		.button
+			width: 100%
+			@media screen and (min-width: $breakpoint-md)
+				width: auto

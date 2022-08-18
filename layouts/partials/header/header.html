@@ -1,40 +1,54 @@
-<header>
-  <nav>
+<header class="header"> 
+  <nav class="navigation">
     <a href="{{ .Site.BaseURL }}">
       <img src="images/logo.svg" alt="Logo">
     </a>
-    <div>
-      <ul>
+    <div class="navigation-links">
+      <div>
+        <ul class="links">
         {{ range .Site.Menus.main -}}
           <li>
-            <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+            {{ if .Params.last }}
+              <a class="button button-primary button-primary__outline font-normal" href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+            {{ else }}
+              <a href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+            {{ end }}
           </li>
         {{ end -}}
-      </ul>
-      <a href="#" class="btn-header">
-        Get in touch
+        </ul>
+      </div>
+      <div>
+        <ul class="links">
+          {{ range .Site.Menus.social -}}
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}">
+                <img src="{{ .Params.icon | absURL }}" alt="{{ .Name }}">
+                <span class="sr-only">{{ .Name | safeHTML }}</span>
+              </a>
+            </li>
+          {{ end -}}
+        </ul>
+      </div>
+      <a class="menu" onclick="showSidebar()">
+        <img src="icons/menu.svg" alt="Menu icon">
       </a>
     </div>
-    <a class="menu" onclick="showSidebar()">
-      <img src="icons/menu.svg" alt="Menu icon">
-    </a>
   </nav>
 </header>
 
-<aside>
-  <a class="close" onclick="hideSidebar()">
-    <img src="icons/close.svg" alt="Close icon">
-  </a>
+<aside class="header-mobile">
+  <div class="text-right">
+    <a class="close" onclick="hideSidebar()">
+      <img src="icons/close.svg" alt="Close icon">
+    </a>
+  </div>
   <div>
-    <ul>
+    <ul class="mobile-links">
       {{ range .Site.Menus.main -}}
         <li>
           <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
         </li>
       {{ end -}}
     </ul>
-    <a href="#" class="btn-header">
-      Get in touch
-    </a>
   </div>
 </aside>
