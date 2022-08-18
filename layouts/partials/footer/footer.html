@@ -1,16 +1,16 @@
-<footer>
+<footer class="footer">
     <div>
-        <div class="logo">
-            <img src="images/logo-footer.svg" alt="">
+        <div class="footer-logo text-center">
+            <img src="images/logo-footer.svg" alt="" width="105" height="105">
         </div>
-        <ul class="links">
+        <ul class="links links-footer">
             {{ range .Site.Menus.footer -}}
                 <li>
                     <a href="{{ .URL }}">{{ .Name | safeHTML }}</a>
                 </li>
             {{ end -}}
         </ul>
-        <ul class="social-networks">
+        <ul class="links links-social">
             {{ range .Site.Menus.social -}}
                 <li>
                     <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}">
