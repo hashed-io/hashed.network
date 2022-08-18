@@ -1,18 +1,74 @@
-*,
-*::after,
-*::before 
-    margin: 0
-    padding: 0
+html
+  font-size: 19px
 
 body
-    background: transparent linear-gradient(147deg, #290266 0%, #150133 25%)
-    font-family: "ArminSoft", sans-serif
-    opacity: 1
-    overflow-x: hidden
-
-a
-    text-decoration: none
+  background: transparent $dark
+  font-family: $font-avantgarde 
+  overflow-x: hidden
+  color: $white
 
 .divider
-    border-bottom: 1px solid #30E6FC
-    width: 80px
+  display: block
+  height: 2px
+  width: 100%
+  max-width: 171px
+  background: $white
+  margin-top: 50px
+
+input
+  border: 1px solid $white
+  padding: 13px 0px 13px 30px
+  text-align: left
+
+.container
+  max-width: $breakpoint-xxxl
+  margin-left: auto
+  margin-right: auto
+
+
+.sr-only
+  position: absolute;
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0, 0, 0, 0)
+  white-space: nowrap
+  border: 0
+
+.bg-dark
+  background: $dark
+
+.links 
+  display: flex
+  gap: 52px
+  align-items: center
+  justify-content: center
+
+  &-footer
+    @media screen and (max-width: $breakpoint-md)
+      flex-direction: column 
+    @media screen and (min-width: $breakpoint-md) 
+      gap: 72px
+
+.grid-container
+  display: grid
+  gap: 15px
+  grid-template-columns: auto 
+  @media screen and (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxxl)
+    grid-template-columns: repeat(2, 436px)
+  @media screen and (min-width: $breakpoint-xl)
+    justify-content: center
+  @media screen and (min-width: $breakpoint-xxxl) 
+    grid-template-columns: repeat(3, 436px)
+.flex-container
+  display: flex
+
+.dots-box
+  display: none
+  @media screen and (min-width: $breakpoint-xxxl) 
+    display: inline
+
+.no-scroll
+  overflow: hidden

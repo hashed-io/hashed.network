@@ -1,0 +1,84 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $font-akzidenz-super
+
+h1
+  font-size: 3.5rem
+h2
+  font-size: 3rem
+h3
+  font-size: 2.75rem
+h4
+  font-size: 2.5rem
+h4
+  font-size: 2rem
+h5
+  font-size: 1.75rem
+h6
+  font-size: 1.5rem
+
+.title
+  &-1
+    font-size: 30px
+    font-family: $font-akzidenz-super
+    @media screen and (min-width: $breakpoint-sm)
+      font-size: 60px
+    @media screen and (min-width: $breakpoint-md)
+      font-size: 80px
+   
+  &-2
+    font-size: 25px
+    @media screen and (min-width: $breakpoint-sm)
+      font-size: 30px
+    @media screen and (min-width: $breakpoint-md)
+      font-size: 50px
+    font-family: $font-akzidenz-super
+  &-3
+    font-size: 25px
+    @media screen and (min-width: $breakpoint-md)
+      font-size: 30px
+    font-weight: 600
+    font-family: $font-akzidenz
+
+.font
+  &-akzidenz-super
+    font-family: $font-akzidenz-super
+  &-akzidenz
+    font-family: $font-akzidenz
+  &-avantgarde
+    font-family: $font-avantgarde
+    line-height: 42px
+  &-normal
+    font-weight: 400 !important
+
+.text
+  &-dark
+    color: $dark
+  &-white
+    color: $white
+  &-grey
+    color: $grey
+  
+
+  &-gradient
+    background: $gradient-primary 
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+  &-center
+    text-align: center
+  &-left
+    text-align: left
+  &-right
+    text-align: right
+  &-capitalize
+    text-transform: capitalize
+  &-uppercase
+    text-transform: uppercase
+  &-verticaly
+    writing-mode: vertical-lr
+    transform: scale(-1, -1)

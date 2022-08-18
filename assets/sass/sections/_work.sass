@@ -1,0 +1,20 @@
+.work
+  &-information
+    margin-bottom: 100px !important
+    justify-content: space-between
+  .container
+    @media screen and (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxxl)
+      .text-verticaly
+        text-align: center
+    @media screen and (max-width: $breakpoint-xxxl)
+      .flex-container
+        flex-direction: column
+        .text-verticaly
+          writing-mode: horizontal-tb
+          transform: scale(1)
+  .flex-container:not(:last-child)
+    margin-bottom: 20px
+  &-title-container
+    margin-top: auto
+    margin-right: auto
+    max-width: 698px

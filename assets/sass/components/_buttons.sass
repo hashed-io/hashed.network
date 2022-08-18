@@ -1,0 +1,18 @@
+.button
+  font-weight: 600
+  &,
+  &-primary,
+  &-secondary,
+  &__outline
+    padding: 13px 28px
+
+  &-primary
+    background: $gradient-primary
+
+    &__outline
+      background: transparent
+      border: 2px solid
+      border-image: $gradient-primary 1
+  &-secondary
+    background: $dark
+    color: $white

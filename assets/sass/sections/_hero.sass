@@ -1,0 +1,40 @@
+.hero
+  position: relative
+  &-image
+    width: 100%
+    object-fit: cover
+    filter: saturate(180%)
+    object-position: bottom
+    &__center
+      object-position: center
+  &-description
+    margin-top: 50px
+    margin-bottom: 50px
+  &-bg,
+  &-bg-2
+    background: $gradient-dark 0% 0%
+    position: absolute
+    height: 100%
+    width: 100vw
+    top: 0
+    left: 0
+    &-2
+      background: $gradient-dark-2 0% 0%
+  &-details,
+  &-details-2
+    width: 100%
+    position: absolute
+    display: block
+    top: 50%
+    transform: translateY(-50%)
+    @media screen and (min-width: $breakpoint-xxxl)
+      width: auto
+      max-width: 655px
+      left: calc(calc(100vw - #{$breakpoint-xxxl}) / 2)
+    &-2
+      margin-right: 0
+      @media screen and (min-width: $breakpoint-xxxl)
+        right: calc(calc(100vw - #{$breakpoint-xxxl}) / 2)
+      .divider
+        margin-left: auto
+      

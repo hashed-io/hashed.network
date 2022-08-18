@@ -1,0 +1,32 @@
+.supporters
+	background: $dark $gradient-black 0% 0% no-repeat
+	padding-top: 126px
+	padding-bottom: 126px
+
+	.container
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		@media screen and (min-width: $breakpoint-xxl)
+			flex-direction: row
+
+
+	&-title
+		display: inline-block
+		text-align: center
+		@media screen and (min-width: $breakpoint-xxl)
+			width: 40%
+			text-align: left
+	&-images
+		width: auto
+		display: inline-flex
+		align-items: center
+		gap: 80px
+		justify-content: center
+		margin-top: 50px
+		flex-direction: column
+		@media screen and (min-width: $breakpoint-lg)
+			flex-direction: row
+		@media screen and (min-width: $breakpoint-xxl)
+			justify-content: start
+			margin-top: 0px
