@@ -9,10 +9,16 @@
     weight = 2
 
 [[main]]
-    name = "News"
-    url = "/news"
+    name = "Launch"
+    url = "/launch"
     weight = 3
 
+[[main]]
+    name = "Subscribe"
+    url = "/subscribe"
+    weight = 4
+    [main.params]
+        last = true
 
 [[button]]
     name = "Get in touch"
@@ -58,11 +64,11 @@
     weight = 3
 
 [[footer]]
-    name = "News"
-    url = "/news"
+    name = "Launch"
+    url = "/launch"
     weight = 4
 
 [[footer]]
-    name = "Get in touch"
-    url = "/touch"
+    name = "Subscribe"
+    url = "/subscribe"
     weight = 5
