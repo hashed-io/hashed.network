@@ -45,7 +45,7 @@
     url = 'https://github.com/hashed-io'
     weight = '3'
     [social.params]
-        icon = 'icons/gitlab.svg'
+        icon = 'icons/github.svg'
 
 
 [[footer]]
