@@ -4,13 +4,18 @@
 #     weight = 1
 
 [[main]]
-    name = "Documentation"
-    url = "https://docs.hashed.network"
+    name = "Network"
+    url = "/"
+    weight = 1
+
+[[main]]
+    name = "Team"
+    url = "/teams"
     weight = 2
 
 [[main]]
-    name = "Rust Docs"
-    url = "https://hashed-io.github.io/hashed-substrate/hashed_runtime/index.html"
+    name = "Docs"
+    url = "https://docs.hashed.network"
     weight = 3
 
 # [[main]]
@@ -38,26 +43,33 @@
 #     [social.params]
 #         icon = 'icons/medium.svg'
 
-[[social]]
-    name = 'Twitter'
-    url = 'https://twitter.com/@HashedNetwork'
-    weight = '2'
-    [social.params]
-        icon = 'icons/twitter.svg'
+#[[social]]
+#    name = 'Twitter'
+#    url = 'https://twitter.com/@HashedNetwork'
+#    weight = '2'
+#    [social.params]
+#        icon = 'icons/twitter.svg'
 
-[[social]]
-    name = 'GitHub'
-    url = 'https://github.com/hashed-io'
-    weight = '3'
-    [social.params]
-        icon = 'icons/github.svg'
+#[[social]]
+#    name = 'GitHub'
+#    url = 'https://github.com/hashed-io'
+#    weight = '3'
+#    [social.params]
+#        icon = 'icons/github.svg'
 
 
 [[footer]]
-    name = "Home"
+    name = "Network"
     url = "/"
     weight = 1
-
+[[footer]]
+    name = "team"
+    url = "/categories"
+    weight = 2
+[[footer]]
+    name = "Docs"
+    url = "https://docs.hashed.network"
+    weight = 3
 # [[footer]]
 #     name = "Team"
 #     url = "/team"
