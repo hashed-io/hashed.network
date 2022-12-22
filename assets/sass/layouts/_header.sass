@@ -1,13 +1,15 @@
 .header
   background-color: transparent
-  padding-top: 45px
-  position: absolute
+  padding-top: 20px
+  padding-bottom: 30px
+  position: fixed
   width: 100%
   z-index: 1
+  background: $gradient-black
 
   .navigation
-    max-width: $breakpoint-xxxl
     margin: 0 auto
+    padding: 0 2%
     display: flex
     justify-content: space-between
     align-items: center
@@ -23,14 +25,14 @@
           display: block
   
   &-mobile
-    padding-top: 50px
+    padding-top: 100px
     background: $dark
     width: 100vw
     height: 100vh
-    position: absolute
+    position: fixed
     top: 0
     left: 0
-    z-index: 1
+    z-index: 3
     display: none
 
     .mobile-links
@@ -47,3 +49,24 @@
 
 .close
   margin-right: 20px
+
+.social-links
+  display: grid
+  position: fixed
+  gap: 30px
+  bottom: 50px
+  padding-left: 40px
+  @media screen and (max-width: $breakpoint-md)
+    display: none
+
+.scroll-down
+  position: fixed
+  gap: 30px
+  bottom: 50px
+  right: 1%
+  padding-left: 40px
+  @media screen and (max-width: $breakpoint-md)
+    display: none
+
+.active
+  background-color: rgba(255,0,0,0.8);

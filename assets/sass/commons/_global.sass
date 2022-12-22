@@ -3,7 +3,7 @@ html
 
 body
   background: transparent $dark
-  font-family: $font-avantgarde 
+  font-family: $font-consolas
   overflow-x: hidden
   color: $white
 
@@ -25,7 +25,10 @@ input
   margin-left: auto
   margin-right: auto
 
-
+.overflow-x-hidden
+  overflow-x: hidden
+.overflow-hidden
+  overflow: hidden
 .sr-only
   position: absolute;
   width: 1px
@@ -72,3 +75,17 @@ input
 
 .no-scroll
   overflow: hidden
+
+.btn
+  color: $green
+  border: 1px solid $green
+  padding: 0.2em 0.5em 0.2em 0.5em
+  border-radius: 5px
+  font-size: 14px
+  &-2
+    cursor: pointer
+    color: $green
+    border: 1px solid $green
+    padding: 0.5em 3em 0.5em 3em
+    border-radius: 5px
+    font-size: 14px

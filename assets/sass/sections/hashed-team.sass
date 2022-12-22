@@ -1,0 +1,62 @@
+.hashedteam
+  position: relative
+  width: 60%
+  top: -10em
+  height: auto
+  margin: 0 auto
+  
+  @media screen and (min-width: $breakpoint-xxxl)
+    width: 70%
+    max-width: 1400px
+    left: calc(calc(100vw - #{$breakpoint-xxl}) / 8)
+
+  .flex-container
+    display: flex
+    flex-wrap: wrap;
+    gap: 4px
+    @media screen and ( max-width:  $breakpoint-md)
+      gap: 20px
+
+.member
+  &-flex
+    max-width: $breakpoint-xl
+    justify-content: left
+    @media screen and ( max-width:  $breakpoint-md)
+      justify-content: center
+  &-container
+    width: 190px
+    height: 190px
+    position: relative
+    width: auto
+  &-image
+    width: 190px
+    height: 190px
+    display: block
+  &-overlay
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    height: auto
+    width: 100%
+    opacity: 0
+    transition: .6s ease
+    transition-delay: 300ms
+    background-color: rgba(0,0,0,0.75)
+  &-name
+    color: white
+    font-size: 20px
+    position: relative
+    top: 0%
+    left: 0%
+    padding: 0.5em 0.5em 0.5em
+    text-align: left
+  &-chips
+    font-size: 20px
+    position: absolute
+    padding: 0.5em 0.5em 0.5em
+    bottom: 0%
+    left: 0%
+.member-container:hover .member-overlay
+  opacity: 1
