@@ -36,26 +36,26 @@
 #     weight = 1
 
 
-# [[social]]
-#     name = 'Medium'
-#     url = 'https://medium.com'
-#     weight = '1'
-#     [social.params]
-#         icon = 'icons/medium.svg'
+ [[social]]
+     name = 'Medium'
+     url = 'https://medium.com'
+     weight = '1'
+     [social.params]
+         icon = 'icons/medium.svg'
 
-#[[social]]
-#    name = 'Twitter'
-#    url = 'https://twitter.com/@HashedNetwork'
-#    weight = '2'
-#    [social.params]
-#        icon = 'icons/twitter.svg'
-
-#[[social]]
-#    name = 'GitHub'
-#    url = 'https://github.com/hashed-io'
-#    weight = '3'
-#    [social.params]
-#        icon = 'icons/github.svg'
+[[social]]
+    name = 'Twitter'
+    url = 'https://twitter.com/@HashedNetwork'
+    weight = '2'
+    [social.params]
+        icon = 'icons/twitter.svg'
+        
+[[social]]
+    name = 'GitHub'
+    url = 'https://github.com/hashed-io'
+    weight = '3'
+    [social.params]
+        icon = 'icons/github.svg'
 
 
 [[footer]]
