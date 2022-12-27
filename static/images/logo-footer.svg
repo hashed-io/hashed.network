@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="89.171" height="89.171" viewBox="0 0 89.171 89.171">
-  <g id="Raggruppa_3577" data-name="Raggruppa 3577" transform="translate(-179.253 -54.271)">
-    <path id="Tracciato_1" data-name="Tracciato 1" d="M76.112,13.059A44.586,44.586,0,0,0,13.059,76.112h0A44.3,44.3,0,0,0,44.585,89.171h0A44.586,44.586,0,0,0,76.112,13.059M53.535,35.637a12.656,12.656,0,1,1-17.9,0,12.671,12.671,0,0,1,17.9,0M31.711,31.711A18.208,18.208,0,1,0,61.039,52.383a25.829,25.829,0,1,1-24.25-24.25,18.118,18.118,0,0,0-5.077,3.578m25.75,44.379a31.38,31.38,0,1,0-51.9-32.276A39.032,39.032,0,0,1,72.187,16.985,39.032,39.032,0,0,1,45.419,83.608a31.251,31.251,0,0,0,12.042-7.519" transform="translate(179.253 54.271)" fill="#2fdcb6"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="41" viewBox="0 0 220 41">
+  <g id="Raggruppa_3664" data-name="Raggruppa 3664" transform="translate(-105 -2777.05)">
+    <g id="Raggruppa_3633" data-name="Raggruppa 3633" transform="translate(-74.253 2722.779)">
+      <path id="Tracciato_1" data-name="Tracciato 1" d="M34.764,5.964a20.364,20.364,0,0,0-28.8,28.8h0a20.233,20.233,0,0,0,14.4,5.964h0a20.364,20.364,0,0,0,14.4-34.764M24.452,16.277a5.781,5.781,0,1,1-8.175,0,5.787,5.787,0,0,1,8.175,0m-9.968-1.793a8.316,8.316,0,1,0,13.4,9.442A11.8,11.8,0,1,1,16.8,12.85a8.275,8.275,0,0,0-2.319,1.634m11.761,20.27A14.333,14.333,0,1,0,2.54,20.012,17.828,17.828,0,0,1,32.971,7.758a17.828,17.828,0,0,1-12.226,30.43,14.274,14.274,0,0,0,5.5-3.434" transform="translate(179.253 54.271)" fill="#fff"/>
+    </g>
+    <text id="Hashed_Network" data-name="Hashed Network" transform="translate(166 2789)" fill="#fff" font-size="18" font-family="CircularStd-Black, Circular Std Black, sans-serif" font-weight="800"><tspan x="0" y="15">Hashed</tspan><tspan y="15" font-family="CircularStd-Bold, Circular Std Bold" font-weight="700"> </tspan><tspan y="15" font-family="CircularStd-Book, Circular Std Book, sans-serif" font-weight="400">Network</tspan></text>
   </g>
 </svg>
