@@ -1,13 +1,12 @@
 {{ define "main" }}
-    <div class="parallax">
-        {{ partial "sections/hero2.html" . }}
-        {{/*  {{ partial "sections/hero.html" . }}  */}}
-        {{ partial "sections/description.html" . }}
-        {{ partial "sections/tools.html" . }}
-        {{ partial "sections/hashed-team.html" . }}
-        {{ partial "sections/partners2.html" . }}
-        {{/*  {{ partial "sections/partners.html" . }}  */}}
-        {{/*  {{ partial "sections/supporters.html" .}}  */}}
-        <!-- {{ partial "sections/subscribe.html" . }} -->
-    </div>
+    {{ partial "sections/hero2.html" . }}
+    {{ partial "sections/supporters.html" .}}
+    {{/*  {{ partial "sections/description.html" . }}*/}}
+    {{ partial "sections/tools.html" . }}
+    {{/*  {{ partial "sections/hashed-team.html" . }}  */}}
+    {{ partial "sections/partners2.html" . }}  
+    
+    {{/*  {{ partial "sections/hero.html" . }}  */}}
+    {{/*  {{ partial "sections/partners.html" . }}  */}}
+    <!-- {{ partial "sections/subscribe.html" . }} -->
 {{ end }}
