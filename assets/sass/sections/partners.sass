@@ -1,32 +1,10 @@
 .partners
-	padding-top: 5em
-	overflow-x: hidden;
+	background: #000
 	.container
-		&-text
-			background: red
-			width: 100%
-			background-color: rgba(0, 0, 0, 0.8)
-		&-elements
-			position: relative
-			width: 60%
-			height: auto
-			margin: 0 auto  
-			@media screen and (min-width: $breakpoint-xxxl)
-				width: 70%
-				max-width: 1400px
-				left: calc(calc(100vw - #{$breakpoint-xxl}) / 8)
-
-	.rocket-img
-		background-image: url('../images/planet.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		width: 100%
-		height: 800px
-		max-height: 800px
-
+		@media screen and (max-width: $breakpoint-sm)
+			padding: 0% 10% 0% 10%
 	&-grid
-		padding: 30px 0
+		padding: 30px 0px
 		display: grid
 		grid-template-columns:  auto
 		gap: 23px
@@ -34,13 +12,20 @@
 			grid-template-columns: repeat(3, auto)
 
 	&-title
-		margin-top: 167px
+		margin: 0 auto
+
+.logo
+	margin-left: 0px
+	margin-top: 20px
 
 .partner
-
-	padding: 63px 80px 63px 0px
+	background: #1B1B21 0% 0% no-repeat padding-box;
+	border-radius: 30px
+	padding: 50px 50px
+	display: grid
+	place-items: left;
 	@media screen and (max-width: $breakpoint-sm)
-		padding: 10px 0px
+		padding: 10px 30px
 	&-description
 		margin-top: 40px
 		margin-bottom: 70px

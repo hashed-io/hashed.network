@@ -1,37 +1,24 @@
 .hero
   position: relative
-  height: 140vh
+  height: 100vh
   overflow-x: hidden
+  background: url('../images/hero-bg.png') no-repeat
+  background-size: cover
   &-details,
   &-details-2
     z-index: 1
-    width: 60%
+    padding: 0 5%
+    width: 50%
     position: relative
     display: block
-    top: 30%
-    transform: translateY(-30%)
+    top: 35%
+    transform: translateY(-35%)
+    @media screen and (max-width: $breakpoint-sm)
+      width: 90%
     @media screen and (min-width: $breakpoint-md)
-      width: 60%
-      max-width: $breakpoint-md
+      width: 40%
+      max-width: $breakpoint-xxl
     @media screen and (min-width: $breakpoint-xxxl)
-      width: 70%
-      max-width: $breakpoint-xxxl
-      left: calc(calc(100vw - #{$breakpoint-xxl}) / 8)
-      
-.moon-container
-  overflow: hidden
-  z-index: 0
-  position: absolute
-  width: 60%
-  min-width: 300px
-  height: auto
-  top: 50vh
-  left: 55%
-
-.asteroid-3
-  z-index: 0
-  position: absolute
-  width: 50%
-  height: auto
-  top: 65vh
-  left: -10%
+      width: 30%
+      max-width: $breakpoint-xxl
+      left: 0      
