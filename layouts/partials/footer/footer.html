@@ -2,13 +2,26 @@
     <div class="footer-logo">
         <img src="images/logo-footer.svg" alt="">
     </div>
-    <ul class="links links-footer">
+    {{/*  <ul class="links links-footer">
         {{ range .Site.Menus.footer -}}
             <li>
                 <a href="{{ .URL }}">{{ .Name | safeHTML }}</a>
             </li>
         {{ end -}}
-    </ul>
+    </ul>  */}}
+    <div class="tabs">
+        <ul class="links links-footer">
+            <li class="active body-2" onclick="showTab(this)" data-tab="network">
+            <a type="button">Network</a>
+            </li>
+            <li class="body-2" onclick="showTab(this)" data-tab="team">
+                <a type="button">Team</a>
+            </li>
+            <li class="body-2">
+            <a type="button" href="https://docs.hashed.network/">Documentation</a>
+            </li>
+        </ul>
+    </div>
     <ul class="links links-social">
         {{ range .Site.Menus.social -}}
             <li>
