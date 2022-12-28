@@ -1,8 +1,8 @@
 .hashedteam
-  position: static
-  width: 80%
-  padding-top: 5rem
-  padding-bottom: 5rem
+  position: relative
+  width: 90%
+  padding-top: 10rem
+  padding-bottom: 10rem
   margin: 0 auto
   display: grid
   gap: 35px
@@ -10,16 +10,15 @@
   align-content: center
   grid-template-columns: auto 
   @media screen and (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxxl)
-    grid-template-columns: 50% 50%
+    grid-template-columns: 40% 60%
   @media screen and (min-width: $breakpoint-xl)
     justify-content: center
   @media screen and (min-width: $breakpoint-xxxl) 
-    grid-template-columns: 50% 50%
+    grid-template-columns: 40% 60%
   
   @media screen and (min-width: $breakpoint-xxxl)
     width: 70%
     max-width: 1400px
-    left: calc(calc(100vw - #{$breakpoint-xxl}) / 8)
 
   .flex-container
     display: flex
@@ -63,6 +62,9 @@
     left: 0%
     padding: 0.5em 0.5em 0.5em
     text-align: left
+    font-family: $font-foral-pro
+    font-size: 22px
+    font-weight: 600
   &-chips
     font-size: 20px
     position: absolute
@@ -73,3 +75,11 @@
   opacity: 1
 .wrapper
   padding: 0.5em 0.5em 0.5em 0.5em
+.subtitle
+  padding-top: 3em
+  width: 65%
+.bg-hashed
+  background: url('../images/Hashedbg.png')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
