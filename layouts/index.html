@@ -1,11 +1,15 @@
 {{ define "main" }}
-    {{ partial "sections/hero2.html" . }}
-    {{ partial "sections/supporters.html" .}}
+    <div class="tab show" data-tab="network">
+        {{ partial "sections/hero2.html" . }}
+        {{ partial "sections/supporters.html" .}}
+        {{ partial "sections/tools.html" . }}
+        {{ partial "sections/partners2.html" . }}  
+    </div>
+    <div class="tab" data-tab="team">
+        {{ partial "sections/hashed-team.html" . }}
+    </div>
+
     {{/*  {{ partial "sections/description.html" . }}*/}}
-    {{ partial "sections/tools.html" . }}
-    {{/*  {{ partial "sections/hashed-team.html" . }}  */}}
-    {{ partial "sections/partners2.html" . }}  
-    
     {{/*  {{ partial "sections/hero.html" . }}  */}}
     {{/*  {{ partial "sections/partners.html" . }}  */}}
     <!-- {{ partial "sections/subscribe.html" . }} -->
