@@ -1,9 +1,20 @@
 .hashedteam
-  position: relative
-  width: 60%
-  top: -10em
-  height: auto
+  position: static
+  width: 80%
+  padding-top: 5rem
+  padding-bottom: 5rem
   margin: 0 auto
+  display: grid
+  gap: 35px
+  justify-content: center
+  align-content: center
+  grid-template-columns: auto 
+  @media screen and (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxxl)
+    grid-template-columns: 50% 50%
+  @media screen and (min-width: $breakpoint-xl)
+    justify-content: center
+  @media screen and (min-width: $breakpoint-xxxl) 
+    grid-template-columns: 50% 50%
   
   @media screen and (min-width: $breakpoint-xxxl)
     width: 70%
@@ -24,13 +35,13 @@
     @media screen and ( max-width:  $breakpoint-md)
       justify-content: center
   &-container
-    width: 190px
-    height: 190px
+    width: 220px
+    height: 220px
     position: relative
     width: auto
   &-image
-    width: 190px
-    height: 190px
+    width: 220px
+    height: 220px
     display: block
   &-overlay
     position: absolute
@@ -60,3 +71,5 @@
     left: 0%
 .member-container:hover .member-overlay
   opacity: 1
+.wrapper
+  padding: 0.5em 0.5em 0.5em 0.5em
