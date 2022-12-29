@@ -4,29 +4,17 @@
       <img src="images/logo.svg" alt="Logo">
     </a>
     <div class="navigation-links">
-      <div>
-        <ul class="links">
-        {{ range .Site.Menus.main -}}
-          <li>
-            {{ if .Params.last }}
-              <a class="button button-primary button-primary__outline font-normal" href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
-            {{ else }}
-              <a href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
-            {{ end }}
+      <div class="tabs">
+        <ul class="links body-2">
+          <li class="active cursor-pointer" onclick="showTab(this)" data-tab="network">
+            <a type="button">Network</a>
           </li>
-        {{ end -}}
-        </ul>
-      </div>
-      <div>
-        <ul class="links">
-          {{ range .Site.Menus.social -}}
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}">
-                <img src="{{ .Params.icon | absURL }}" alt="{{ .Name }}">
-                <span class="sr-only">{{ .Name | safeHTML }}</span>
-              </a>
-            </li>
-          {{ end -}}
+          <li class="body-2 cursor-pointer" onclick="showTab(this)" data-tab="team">
+              <a type="button">Team</a>
+          </li>
+          <li class="body-2">
+            <a type="button" href="https://docs.hashed.network/">Documentation</a>
+          </li>
         </ul>
       </div>
       <a class="menu" onclick="showSidebar()">
@@ -42,13 +30,26 @@
       <img src="icons/close.svg" alt="Close icon">
     </a>
   </div>
-  <div>
+  <div class="tabs">
     <ul class="mobile-links">
-      {{ range .Site.Menus.main -}}
+      <li class="active body-2 cursor-pointer" onclick="showTab(this)" data-tab="network">
+        <a type="button">
+          Network
+        </a>
+      </li>
+      <li class="body-2 cursor-pointer" onclick="showTab(this)" data-tab="team">
+        <a type="button">
+          Team
+        </a>
+      </li>
+      <li class="body-2">
+        <a type="button" href="https://docs.hashed.network/">Documentation</a>
+      </li>
+      {{/*  {{ range .Site.Menus.main -}}
         <li>
           <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
         </li>
-      {{ end -}}
+      {{ end -}}  */}}
     </ul>
   </div>
 </aside>

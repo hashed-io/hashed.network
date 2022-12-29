@@ -3,7 +3,6 @@ const showTab = (ctx) => {
     const tabOptions = document.querySelectorAll('.tabs ul li')
     const tabs = document.querySelectorAll('.tab')
     const dots = document.querySelectorAll('.dot')
-
     tabOptions.forEach(option => {
         if(option.getAttribute('data-tab') === currentTab ) {
             option.classList.add('active')

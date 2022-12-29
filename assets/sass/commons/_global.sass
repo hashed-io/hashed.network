@@ -3,7 +3,7 @@ html
 
 body
   background: transparent $dark
-  font-family: $font-avantgarde 
+  font-family: $font-consolas
   overflow-x: hidden
   color: $white
 
@@ -25,7 +25,18 @@ input
   margin-left: auto
   margin-right: auto
 
+.justify
+  &-start
+    justify-content: start
+  &-center
+    justify-content: center
+  &-end
+    justify-content: end
 
+.overflow-x-hidden
+  overflow-x: hidden
+.overflow-hidden
+  overflow: hidden
 .sr-only
   position: absolute;
   width: 1px
@@ -67,8 +78,58 @@ input
 
 .dots-box
   display: none
-  @media screen and (min-width: $breakpoint-xxxl) 
+  @media screen and (min-width: $breakpoint-xl) 
     display: inline
 
 .no-scroll
   overflow: hidden
+.cursor-pointer
+  cursor: pointer
+.btn
+  cursor: pointer
+  color: $green
+  border: 1px solid $green
+  padding: 0.2em 0.5em 0.2em 0.5em
+  border-radius: 5px
+  font-size: 14px
+  &-2
+    cursor: pointer
+    color: $green
+    border: 1px solid $green
+    padding: 0.5em 3em 0.5em 3em
+    border-radius: 5px
+    font-size: 14px
+  &-primary
+    cursor: pointer
+    padding: 15px 65px;
+    border-radius: 30px
+    border: solid 2px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 100px 1px rgb(37, 41, 60) inset;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), $gradient-primary
+    font-size: 13px
+    font-family: $font-circular-std
+  &-secondary
+    cursor: pointer
+    padding: 14px 50px;
+    border-radius: 30px
+    border: solid 2px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 100px 1px rgb(26, 26, 31) inset;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), $gradient-primary
+    font-size: 13px
+    font-family: $font-circular-std
+  &-chip
+    border: solid 2px #7587FD;
+    border-radius: 7px
+    padding: 5px 8px
+    font-family: $font-circular-std
+    font-size: 10px
+.tab
+    display: none
+    &.show
+      display: block !important
+.active
+  color: #7587FD

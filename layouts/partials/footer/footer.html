@@ -1,23 +1,27 @@
 <footer class="footer">
-    <div>
-        <div class="footer-logo text-center">
-            <img src="images/logo-footer.svg" alt="" width="105" height="105">
-        </div>
+    <div class="footer-logo">
+        <img src="images/logo-footer.svg" alt="">
+    </div>
+    <div class="tabs">
         <ul class="links links-footer">
-            {{ range .Site.Menus.footer -}}
-                <li>
-                    <a href="{{ .URL }}">{{ .Name | safeHTML }}</a>
-                </li>
-            {{ end -}}
-        </ul>
-        <ul class="links links-social">
-            {{ range .Site.Menus.social -}}
-                <li>
-                    <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}">
-                        <img src="{{ .Params.icon | absURL }}" alt="{{ .Name }}">
-                    </a>
-                </li>
-            {{ end -}}
+            <li class="active body-2 cursor-pointer" onclick="showTab(this)" data-tab="network">
+            <a type="button">Network</a>
+            </li>
+            <li class="body-2 cursor-pointer" onclick="showTab(this)" data-tab="team">
+                <a type="button">Team</a>
+            </li>
+            <li class="body-2">
+            <a type="button" href="https://docs.hashed.network/">Documentation</a>
+            </li>
         </ul>
     </div>
+    <ul class="links links-social">
+        {{ range .Site.Menus.social -}}
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}">
+                    <img src="{{ .Params.icon | absURL }}" alt="{{ .Name }}">
+                </a>
+            </li>
+        {{ end -}}
+    </ul>
 </footer>

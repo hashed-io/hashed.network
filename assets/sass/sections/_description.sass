@@ -1,0 +1,62 @@
+.description
+  position: relative
+  width: 60%
+  height: auto
+  margin: 0 auto  
+  top: -15rem
+  @media screen and (max-width: $breakpoint-md)
+    left: 0
+    width: 100%
+    max-width: $breakpoint-md
+  @media screen and (min-width: $breakpoint-xxxl)
+    width: 70%
+    max-width: 1400px
+    left: calc(calc(100vw - #{$breakpoint-xxl}) / 8)
+
+  .container
+    margin-top: 2em
+    margin-bottom: 2em
+.chips
+  gap: 10px
+
+.container-description
+  padding-bottom: 2em
+  padding-top: 2em
+  width: 60%
+  height: auto
+  margin: 0 auto  
+  @media screen and (min-width: $breakpoint-md)
+    width: 100%
+    left: 0
+
+  @media screen and (min-width: $breakpoint-xxxl)
+    width: 100%
+    max-width: $breakpoint-xxxl
+    left: calc(calc(100vw - #{$breakpoint-xxl}) / 8)
+
+
+.container-asteroid
+  justify-content: space-between
+  height: 200px
+
+.asteroid
+  &-1
+    position: absolute
+    left: 0
+  &-2
+    position: absolute
+    right: 0
+  
+
+.tool-description
+  padding: 3rem 0
+
+.satellite
+  margin: 0em -5em  
+  padding: 3em 3em
+  @media screen and (max-width: $breakpoint-md)
+    margin: 0em 1em 
+  &-container
+    display: flex
+    justify-content: end
+    align-items: flex-end

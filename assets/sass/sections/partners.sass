@@ -1,26 +1,36 @@
 .partners
-	background: $dark $gradient-partners 0% 0% no-repeat
-
+	background: #000
+	margin-bottom: 100px
+	.container
+		@media screen and (max-width: $breakpoint-sm)
+			padding: 0% 10% 0% 10%
 	&-grid
-		padding: 100px 0
+		padding: 30px 0px
 		display: grid
 		grid-template-columns:  auto
 		gap: 23px
 		@media screen and (min-width: $breakpoint-xxl)
-			grid-template-columns: repeat(2, auto)
+			grid-template-columns: repeat(3, auto)
 
 	&-title
-		margin-top: 167px
+		margin: 100px auto
+
+.logo
+	margin-left: 0px
+	margin-top: 20px
 
 .partner
-	padding: 63px
-	background: $dark $gradient-card 0% 0% no-repeat
-
+	background: #1B1B21 0% 0% no-repeat padding-box;
+	border-radius: 30px
+	padding: 50px 50px
+	display: grid
+	place-items: left;
+	@media screen and (max-width: $breakpoint-sm)
+		padding: 10px 30px
 	&-description
-		margin-top: 55px
+		margin-top: 40px
 		margin-bottom: 70px
-		line-height: 42px
-		letter-spacing: 0.19px
+		line-height: 31px
 		color: $grey
 
 	&-links
@@ -36,3 +46,7 @@
 			width: 100%
 			@media screen and (min-width: $breakpoint-md)
 				width: auto
+.logo
+	justify-content: start
+	align-items: center
+	gap: 30px
