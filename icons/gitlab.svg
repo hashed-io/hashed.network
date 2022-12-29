@@ -1,13 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.671" height="20.887" viewBox="0 0 22.671 20.887">
-  <defs>
-    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#32e4b6"/>
-      <stop offset="1" stop-color="#086eb1"/>
-    </linearGradient>
-  </defs>
-  <g id="Raggruppa_717" data-name="Raggruppa 717" transform="translate(0 0)">
-    <g id="Raggruppa_38" data-name="Raggruppa 38">
-      <path id="Tracciato_144" data-name="Tracciato 144" d="M53.594,69.516l-1.264-3.9-2.519-7.738a.432.432,0,0,0-.821,0l-2.519,7.733H38.134l-2.519-7.733a.432.432,0,0,0-.821,0L32.28,65.606,31.01,69.516a.876.876,0,0,0,.312.967L42.3,78.462l10.982-7.98A.863.863,0,0,0,53.594,69.516Z" transform="translate(-30.968 -57.575)" fill="url(#linear-gradient)"/>
-    </g>
+<svg id="gitlab-icon" data-name="Raggruppa 717" xmlns="http://www.w3.org/2000/svg" width="24.021" height="22.132" viewBox="0 0 24.021 22.132">
+  <g id="Raggruppa_38" data-name="Raggruppa 38">
+    <path id="Tracciato_144" data-name="Tracciato 144" d="M54.942,70.227,53.6,66.09l-2.669-8.2a.457.457,0,0,0-.87,0l-2.669,8.194H38.56l-2.669-8.194a.457.457,0,0,0-.87,0l-2.664,8.194-1.345,4.142a.928.928,0,0,0,.331,1.025L42.98,79.707l11.637-8.455A.915.915,0,0,0,54.942,70.227Z" transform="translate(-30.968 -57.575)" fill="#9094a5"/>
   </g>
 </svg>
