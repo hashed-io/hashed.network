@@ -1,13 +1,20 @@
 const showTab = (ctx) => {
     const currentTab = ctx.getAttribute('data-tab')
     const tabOptions = document.querySelectorAll('.tabs ul li')
+    const tabOptionsFooter = document.querySelectorAll('.tabs-footer ul li')
     const tabs = document.querySelectorAll('.tab')
-    const dots = document.querySelectorAll('.dot')
     tabOptions.forEach(option => {
         if(option.getAttribute('data-tab') === currentTab ) {
             option.classList.add('active')
         } else {
             option.classList.remove('active')
+        }
+    })
+    tabOptionsFooter.forEach(option => {
+        if(option.getAttribute('data-tab') === currentTab ) {
+            option.classList.add('active-footer')
+        } else {
+            option.classList.remove('active-footer')
         }
     })
 
@@ -19,11 +26,4 @@ const showTab = (ctx) => {
         }
     })
 
-    dots.forEach(dot => {
-        if(dot.getAttribute('data-tab') === currentTab ) {
-            dot.classList.add('active')
-        } else {
-            dot.classList.remove('active')
-        }
-    })
 }
