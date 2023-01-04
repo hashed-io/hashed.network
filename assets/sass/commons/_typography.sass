@@ -22,14 +22,11 @@ h6
 
 .title
   &-1
-    font-size: 40px
     font-family: $font-circular-std
-    @media screen and (min-width: $breakpoint-sm)
-      font-size: 40px
-    @media screen and (min-width: $breakpoint-md)
-      font-size: 55px
+    @media screen and (max-width: $breakpoint-lg)
+      font-size: 40px !important
     @media screen and (min-width: $breakpoint-lg)
-      font-size: 50px
+      font-size: 55px !important
    
   &-2
     font-family: $font-circular-std
@@ -54,7 +51,7 @@ h6
 .caption
   &-1
     font-family: $font-circular-std
-    font-size: 12px
+    font-size: 10px
 
 .font
   &-akzidenz-super
