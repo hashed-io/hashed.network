@@ -1,24 +1,25 @@
 .hero
   position: relative
   height: 100vh
-  overflow-x: hidden
+  width: 115vw
   background: url('../images/hero-bg.png') no-repeat
   background-size: cover
+  background-position: left center;
   &-details,
   &-details-2
     z-index: 1
     padding: 0 5%
-    width: 50%
+    width: 30%
     position: relative
     display: block
-    top: 45%
-    transform: translateY(-45%)
+    top: 55%
+    transform: translateY(-55%)
     @media screen and (max-width: $breakpoint-sm)
       width: 90%
     @media screen and (min-width: $breakpoint-md)
       width: 50%
       max-width: $breakpoint-xxl
     @media screen and (min-width: $breakpoint-xxxl)
-      width: 30%
+      width: 40%
       max-width: $breakpoint-xxl
-      left: 0      
+      left: -40px
