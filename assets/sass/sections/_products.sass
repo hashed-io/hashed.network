@@ -16,24 +16,58 @@
   height: auto
   margin: 0 auto
 .title
-  padding: 5rem 3rem
+  margin: 100px auto
+  @media screen and (max-width: $breakpoint-xl)
+    margin: 50px 0px 
 
 .tool
   &-description
-    width: 60%
+    width: 40%
+    @media screen and (max-width: $breakpoint-xl)
+      width: 70%
   &-title
     padding-bottom: 5%
   &-button
     margin-top: 3rem
   &-info
     display: flex
-    justify-content: space-around
-    width: 75%
-    gap: 10%
-    @media screen and (max-width: $breakpoint-md)
-      display: inline-flex
-      width: 100%
-      justify-content: space-around
+    margin: 0 auto
+    justify-content: space-evenly
+    width: 100%
 .container-products
   padding-top: 2em
   padding-bottom: 7em
+.img
+  &-vault, &-fund
+    @media screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-xl)
+      width: 253px
+      height: 250px
+    @media screen and (min-width: $breakpoint-xl)
+      position: relative
+      margin-left: 5%
+      margin-top: 3%
+  &-signer
+    @media screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-xl)
+      width: 273px
+      height: 270px
+    @media screen and (min-width: $breakpoint-xl)
+      margin-right: 10%
+      margin-top: 1%
+.flex
+  &-vault, &-fund
+    @media screen and (max-width: $breakpoint-md)
+      max-width: 100vw
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      justify-content: center
+  &-signer
+    @media screen and (max-width: $breakpoint-md)
+      max-width: 100vw
+      display: flex
+      flex-wrap: wrap-reverse
+      width: 100%
+      justify-content: center
+
+.space
+	padding-bottom: 100px
