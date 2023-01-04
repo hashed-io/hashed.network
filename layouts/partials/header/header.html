@@ -32,24 +32,28 @@
   </div>
   <div class="tabs">
     <ul class="mobile-links">
-      <li class="active body-2 cursor-pointer" onclick="showTab(this)" data-tab="network">
+      <li class="active body-2 text-grey cursor-pointer" onclick="showTab(this)" data-tab="network">
         <a type="button">
           Network
         </a>
       </li>
-      <li class="body-2 cursor-pointer" onclick="showTab(this)" data-tab="team">
+      <li class="body-2 text-grey cursor-pointer" onclick="showTab(this)" data-tab="team">
         <a type="button">
           Team
         </a>
       </li>
-      <li class="body-2">
+      <li class="body-2 text-grey">
         <a type="button" href="https://docs.hashed.network/">Documentation</a>
       </li>
-      {{/*  {{ range .Site.Menus.main -}}
-        <li>
-          <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
-        </li>
-      {{ end -}}  */}}
     </ul>
   </div>
+  <ul class="header-social">
+    {{ range .Site.Menus.social -}}
+        <li>
+            <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}">
+                <img src="{{ .Params.icon | absURL }}" alt="{{ .Name }}">
+            </a>
+        </li>
+    {{ end -}}
+  </ul>
 </aside>
