@@ -38,7 +38,7 @@
 
  [[social]]
      name = 'Medium'
-     url = 'https://medium.com'
+     url = 'https://medium.com/@hashednetwork'
      weight = '1'
      [social.params]
          icon = 'icons/medium.svg'
