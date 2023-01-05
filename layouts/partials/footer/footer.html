@@ -2,20 +2,20 @@
     <div class="footer-logo">
         <img src="images/logo-footer.svg" alt="">
     </div>
-    <div class="tabs">
+    <div class="tabs-footer">
         <ul class="links links-footer">
-            <li class="active body-2 cursor-pointer" onclick="showTab(this)" data-tab="network">
+            <li class="active-footer body-2 text-book cursor-pointer" onclick="showTab(this)" data-tab="network">
             <a type="button">Network</a>
             </li>
-            <li class="body-2 cursor-pointer" onclick="showTab(this)" data-tab="team">
+            <li class="body-2 text-book cursor-pointer" onclick="showTab(this)" data-tab="team">
                 <a type="button">Team</a>
             </li>
-            <li class="body-2">
+            <li class="body-2 text-book">
             <a type="button" href="https://docs.hashed.network/">Documentation</a>
             </li>
         </ul>
     </div>
-    <ul class="links links-social">
+    <ul class="links-social">
         {{ range .Site.Menus.social -}}
             <li>
                 <a target="_blank" rel="noopener noreferrer" href="{{ .URL | absURL }}">

@@ -14,7 +14,22 @@
 
 	&-title
 		margin: 100px auto
+		text-align: center
+	
+	&-container
+		display: -webkit-box
+		width: 100%
+		margin: auto
+		scrollbar-width: none
 
+	&-mobile
+		@media screen and ( min-width: $breakpoint-xxl )
+			display: none
+			max-width: 40vw
+			
+	&-desktop
+		@media screen and ( min-width: $breakpoint-xs ) and (max-width: $breakpoint-xxl)
+			display: none
 .logo
 	margin-left: 0px
 	margin-top: 20px
@@ -25,6 +40,8 @@
 	padding: 50px 50px
 	display: grid
 	place-items: left;
+	@media screen and ( min-width: $breakpoint-xs ) and (max-width: $breakpoint-xxl)
+		margin-right: 10px
 	@media screen and (max-width: $breakpoint-sm)
 		padding: 10px 30px
 	&-description
@@ -50,3 +67,20 @@
 	justify-content: start
 	align-items: center
 	gap: 30px
+
+.scroll-partners
+	margin: 0 auto
+	max-width: 500px
+
+.dot
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	outline: 1px solid white
+.active-white
+	background-color: white
+.scroll-indicator
+	justify-content: center
+	gap: 15px
+	align-items: center
+	margin-top: 55px

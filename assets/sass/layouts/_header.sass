@@ -5,9 +5,15 @@
   width: 100%
   background: transparent
   z-index: 1
+  .links
+    gap: 62px
   .navigation
     margin: 0 auto
-    padding: 0 5%
+    margin-left: 20px
+    @media screen and (min-width: $breakpoint-xl)
+      padding: 0 9%
+    @media screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-xl)
+      padding: 0 5%
     display: flex
     justify-content: space-between
     align-items: center
@@ -15,7 +21,7 @@
     &-links
       display: flex
       align-items: center
-      gap: 52px
+      padding-right: 5%
       div
         display: none
       @media (min-width: $breakpoint-xl)
@@ -23,8 +29,9 @@
           display: block
   
   &-mobile
-    padding-top: 100px
-    background: $dark
+    padding-top: 20px
+    background: rgba(0, 0, 0, 0.74)
+    backdrop-filter: blur(10px)
     width: 100vw
     height: 100vh
     position: fixed
@@ -32,21 +39,32 @@
     left: 0
     z-index: 3
     display: none
-
     .mobile-links
+      height: 50vh
       padding: 40px
+      display: flex
+      flex-direction: column
+      justify-content: space-between;
+      align-content: center;
+      text-align: center
       & > * 
         padding-bottom: 50px
-
+  &-social
+    display: flex
+    width: 100%
+    justify-content: space-evenly
+    align-content: center
+    position: absolute
+    top: 80vh
 .menu
-  margin-right: 20px
+  margin-right: 5px
   width: 40px
   height: 40px
   @media (min-width: $breakpoint-xl)
     display: none
 
 .close
-  margin-right: 20px
+  margin-right: 30px
 
 .social-links
   display: grid
