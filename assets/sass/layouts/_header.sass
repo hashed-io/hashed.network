@@ -17,11 +17,14 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &-logo
+      height: 50px
+      @media (min-width: $breakpoint-xl)
+        height: 60px
 
     &-links
       display: flex
       align-items: center
-      padding-right: 5%
       div
         display: none
       @media (min-width: $breakpoint-xl)
@@ -58,8 +61,10 @@
     top: 80vh
 .menu
   margin-right: 5px
-  width: 40px
-  height: 40px
+  &,
+  &-icon
+    width: 40px
+    height: 40px
   @media (min-width: $breakpoint-xl)
     display: none
 
