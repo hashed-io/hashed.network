@@ -5,13 +5,16 @@
     <div class="tabs-footer">
         <ul class="links links-footer">
             <li class="active-footer body-2 text-book cursor-pointer" onclick="showTab(this)" data-tab="network">
-            <a type="button">Network</a>
+                <a href="{{ "/" | absURL }}" >Network</a>
             </li>
             <li class="body-2 text-book cursor-pointer" onclick="showTab(this)" data-tab="team">
-                <a type="button">Team</a>
+                <a href="{{ "team" | absURL }}" >Team</a>
             </li>
             <li class="body-2 text-book">
             <a type="button" href="https://docs.hashed.network/">Documentation</a>
+            </li>
+            <li class="body-2 text-book cursor-pointer">
+                <a href="/contact">Contact</a>
             </li>
         </ul>
     </div>
