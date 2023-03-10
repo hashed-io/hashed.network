@@ -1,24 +1,27 @@
 <header class="header"> 
   <nav class="navigation">
     <a href="{{ .Site.BaseURL }}">
-      <img class="navigation-logo" src="images/logo.svg" alt="Logo">
+      <img class="navigation-logo" src="{{ "images/logo.svg" | absURL }}" alt="Logo">
     </a>
     <div class="navigation-links">
       <div class="tabs">
         <ul class="links body-2">
-          <li class="active text-book cursor-pointer" onclick="showTab(this)" data-tab="network">
-            <a type="button">Network</a>
+          <li class="active text-book cursor-pointer">
+            <a href="{{ "/" | absURL }}" >Network</a>
           </li>
-          <li class="body-2 text-book cursor-pointer" onclick="showTab(this)" data-tab="team">
-              <a type="button">Team</a>
+          <li class="body-2 text-book cursor-pointer" >
+              <a href="{{ "team" | absURL }}" >Team</a>
           </li>
           <li class="body-2 text-book">
             <a type="button" href="https://docs.hashed.network/" target="_blank">Documentation</a>
           </li>
+          <li class="body-2 text-book cursor-pointer">
+              <a href="{{ "contact" | absURL }}" >Contact</a>
+          </li>
         </ul>
       </div>
       <a class="menu" onclick="showSidebar()">
-        <img class="menu-icon" src="icons/menu.svg" alt="Menu icon">
+        <img class="menu-icon" src="{{ "icons/menu.svg" | absURL }}" alt="Menu icon">
       </a>
     </div>
   </nav>
@@ -27,20 +30,16 @@
 <aside class="header-mobile">
   <div class="text-right">
     <a class="close" onclick="hideSidebar()">
-      <img src="icons/close.svg" alt="Close icon">
+      <img src="{{ "icons/close.svg" | absURL }}" alt="Close icon">
     </a>
   </div>
   <div class="tabs">
     <ul class="mobile-links">
-      <li class="active body-2 text-grey  rtecursor-pointer" onclick="showTab(this)" data-tab="network">
-        <a type="button">
-          Network
-        </a>
+      <li class="active body-2 text-grey  rtecursor-pointer" data-tab="network">
+        <a href="{{ "/" | absURL }}" >Network</a>
       </li>
-      <li class="body-2 text-grey rte cursor-pointer" onclick="showTab(this)" data-tab="team">
-        <a type="button">
-          Team
-        </a>
+      <li class="body-2 text-grey rte cursor-pointer" data-tab="team">
+        <a href="{{ "team" | absURL }}" >Team</a>
       </li>
       <li class="body-2 text-grey">
         <a type="button" href="https://docs.hashed.network/">Documentation</a>
