@@ -36,24 +36,31 @@
 #     weight = 1
 
 
- [[social]]
+[[social]]
+     name = 'Telegram'
+     url = 'https://t.co/d4IvQis8mz'
+     weight = '1'
+     [social.params]
+         icon = 'icons/telegram.svg'
+
+[[social]]
      name = 'Medium'
      url = 'https://medium.com/@hashednetwork'
-     weight = '1'
+     weight = '2'
      [social.params]
          icon = 'icons/medium.svg'
 
 [[social]]
     name = 'Twitter'
     url = 'https://twitter.com/@HashedNetwork'
-    weight = '2'
+    weight = '3'
     [social.params]
         icon = 'icons/twitter.svg'
         
 [[social]]
     name = 'GitHub'
     url = 'https://github.com/hashed-io'
-    weight = '3'
+    weight = '4'
     [social.params]
         icon = 'icons/github.svg'
 
